@@ -1,0 +1,8 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: wangsonglin
+      cluster-nodes: 10.216.32.148:9300
+      local: false
+server:
+  port: 9091
