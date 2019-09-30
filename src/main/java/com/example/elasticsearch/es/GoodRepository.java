@@ -9,5 +9,9 @@ import org.springframework.stereotype.Component;
  * @date 2019/9/24
  */
 @Component
-public interface GoodReposity extends ElasticsearchRepository<GoodsInfo, Long> {
+public interface GoodRepository extends ElasticsearchRepository<GoodsInfo, String> {
+
+    GoodsInfo findByName(String name);
+
+    GoodsInfo getGoodsInfoByName(String nameStr);
 }

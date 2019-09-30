@@ -1,8 +1,7 @@
 spring:
   data:
     elasticsearch:
-      cluster-name: wangsonglin
-      cluster-nodes: 10.216.32.148:9300
-      local: false
+      cluster-name: docker-cluster
+      cluster-nodes: 10.242.14.190:9300
 server:
   port: 9091

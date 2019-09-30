@@ -8,15 +8,15 @@ import org.springframework.data.elasticsearch.annotations.Document;
  */
 @Document(indexName = "goods", type = "goodsinfo")
 public class GoodsInfo {
-    private Long id;
+    private String id;
     private String name;
     private String description;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -36,7 +36,7 @@ public class GoodsInfo {
         this.description = description;
     }
 
-    public GoodsInfo(Long id, String name, String description) {
+    public GoodsInfo(String id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
